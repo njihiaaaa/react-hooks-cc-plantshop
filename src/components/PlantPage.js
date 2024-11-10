@@ -3,12 +3,16 @@ import NewPlantForm from "./NewPlantForm";
 import PlantList from "./PlantList";
 import Search from "./Search";
 
-function PlantPage() {
+function PlantPage({ plants, onDeletePlant, onUpdatePlant }) {
   return (
     <main>
       <NewPlantForm />
       <Search />
-      <PlantList />
+      <PlantList
+        plants={plants}
+        onDeletePlant={onDeletePlant}
+        onUpdatePlant={onUpdatePlant}
+      />
     </main>
   );
 }

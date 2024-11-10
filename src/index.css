@@ -113,6 +113,40 @@ input:focus {
   margin-top: 0.5rem;
 }
 
+.card p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card input[type="number"] {
+  width: 80px;
+  padding: 0.25rem;
+  border: 1px solid var(--green);
+  border-radius: 4px;
+}
+
+.card button {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.9em;
+  border-radius: 4px;
+}
+
+.card button:not(.primary) {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.card button.primary {
+  background-color: var(--green);
+  color: white;
+}
+
+.card button:hover {
+  opacity: 0.8;
+}
+
+
 @media (min-width: 768px) {
   .cards {
     display: flex;
